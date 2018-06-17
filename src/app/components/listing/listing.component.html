@@ -1,0 +1,21 @@
+<div class="listing-container card">
+  <div class="img-container">
+    <img class="img-fluid" src="{{listing.image}}" alt="house" />
+  </div>
+  <div class="details-container">
+    <div class="title-1">{{listing.name}}</div>
+    <div class="details-1">
+      {{listing.address}}, {{listing.city}} {{listing.state}} {{listing.country}}
+    </div>
+    <div class="details-1">
+      <span>{{listing.beds}} Beds </span>
+      <span>{{listing.baths}} Baths</span>
+    </div>
+    <div class="price-1">${{listing.price}}</div>
+    <p class="details-1">{{listing.description}}</p>
+    <div class="btn-container">
+      <button type="button" class="btn btn-primary">Book Viewing</button>
+      <button type="button" class="btn btn-success">Get Quote</button>
+    </div>
+  </div>
+</div>

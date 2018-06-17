@@ -1,0 +1,22 @@
+.img-container {
+    filter: blur(5px);
+    /* Removes the white edges for the blurred background image*/
+    position: fixed;
+    left: -5px;
+    top:-5px;
+    bottom:-5px;
+    right: -5px;
+    margin:-5px;
+    z-index: -10;
+}
+
+.background {
+    content: url('../../../assets/images/toronto.jpg') ;
+}
+
+.btn-row {
+    height: 100vh;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}

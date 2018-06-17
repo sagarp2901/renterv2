@@ -1,0 +1,18 @@
+.signup-container {
+    height: 100vh;
+    margin-top: 20px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+button {
+    min-width: 135px;
+    height: 35px;
+    border-radius: 18px;
+}
+
+p {
+    font-size: 14px;
+    color: #FFFFFF;
+}

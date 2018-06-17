@@ -1,0 +1,57 @@
+export const Listings = [
+    {
+        name: 'House 1',
+        description: 'Big blue house, picture downlpoaded from google.',
+        address: '171 Main St North',
+        city: 'Toronto',
+        state: 'Ontario',
+        country: 'Canada',
+        zip: 'L6X0H4',
+        beds: '5',
+        baths: '5',
+        image: '../../../assets/images/house1.jpeg',
+        price: 2000,
+        size: '5000 sqft'
+    },
+    {
+        name: 'House 2',
+        description: 'Big beige house, picture downlpoaded from google.',
+        address: '171 Main St North',
+        city: 'Toronto',
+        state: 'Ontario',
+        country: 'Canada',
+        zip: 'L6X0H4',
+        beds: '5',
+        baths: '5',
+        image: '../../../assets/images/house2.jpeg',
+        price: 1800,
+        size: '5000 sqft'
+    },
+    {
+        name: 'House 3',
+        description: 'Big sky blue house, picture downlpoaded from google.',
+        address: '171 Main St North',
+        city: 'Toronto',
+        state: 'Ontario',
+        country: 'Canada',
+        zip: 'L6X0H4',
+        beds: '5',
+        baths: '5',
+        image: '../../../assets/images/house3.jpeg',
+        price: 1600,
+        size: '5000 sqft'
+    },
+    {
+        name: 'House 4',
+        description: 'Big grey house, picture downlpoaded from google.',
+        address: '171 Main St North',
+        city: 'Toronto',
+        state: 'Ontario',
+        country: 'Canada',
+        zip: 'L6X0H4',
+        beds: '5',
+        baths: '5',
+        image: '../../../assets/images/house4.jpeg',
+        price: 1500,
+    }
+];

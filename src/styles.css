@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.title-1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #444444;
+}
+
+.price-1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #444444;
+}
+
+.details-1 {
+    font-size: 20px;
+    font-weight: normal;
+    color: #444444;
+}
+
+button {
+    max-width: 200px;
+    min-width: 150px;
+    height: 40px;
+}
