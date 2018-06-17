@@ -1,5 +1,9 @@
 .listings-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+}
+
+app-listing {
+    margin: auto;
+    margin-bottom: 20px;
 }

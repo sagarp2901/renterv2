@@ -1,6 +1,8 @@
 <div class="listing-container card">
   <div class="img-container">
-    <img class="img-fluid" src="{{listing.image}}" alt="house" />
+    <!-- <img class="img-fluid" src="{{listing.image}}" alt="house" /> -->
+    <!-- TODO: Images need to be passed as input to carousel -->
+    <app-image-carousel></app-image-carousel>
   </div>
   <div class="details-container">
     <div class="title-1">{{listing.name}}</div>
@@ -14,8 +16,8 @@
     <div class="price-1">${{listing.price}}</div>
     <p class="details-1">{{listing.description}}</p>
     <div class="btn-container">
-      <button type="button" class="btn btn-primary">Book Viewing</button>
-      <button type="button" class="btn btn-success">Get Quote</button>
+      <button type="button" class="primary-btn">BOOK VIEWING</button>
+      <button type="button" class="primary-btn">GET QUOTE</button>
     </div>
   </div>
 </div>
