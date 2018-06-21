@@ -1,7 +1,9 @@
 export const Listings = [
     {
         name: 'House 1',
-        description: 'Big blue house, picture downlpoaded from google.',
+        description: `Big blue house, picture downlpoaded from google. 
+        Big blue house, picture downlpoaded from google. Big blue house, 
+        picture downlpoaded from google. Big blue house, picture downlpoaded from google. `,
         address: '171 Main St North',
         city: 'Toronto',
         state: 'Ontario',

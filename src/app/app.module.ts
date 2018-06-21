@@ -15,6 +15,7 @@ import { ListingComponent } from './components/listing/listing.component';
 // Services
 import { ListingsService } from './services/listings.service';
 import { ImageCarouselComponent } from './components/image-carousel/image-carousel.component';
+import { NavComponent } from './components/nav/nav.component';
 
 const appRoutes: Routes = [
   { path: 'landing', component: LandingComponent },
@@ -34,7 +35,8 @@ const appRoutes: Routes = [
     HomeComponent,
     ListingsComponent,
     ListingComponent,
-    ImageCarouselComponent
+    ImageCarouselComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
