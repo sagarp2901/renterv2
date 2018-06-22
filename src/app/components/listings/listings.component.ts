@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ListingsService } from '../../services/listings.service';
+import { IListing } from '../../interfaces/listing';
 
 @Component({
   selector: 'app-listings',
@@ -7,13 +8,14 @@ import { ListingsService } from '../../services/listings.service';
   styleUrls: ['./listings.component.css']
 })
 export class ListingsComponent implements OnInit {
-  public listings = [];
+  public listings: IListing[];
 
   constructor(private listingsService: ListingsService) { }
 
-
   ngOnInit() {
-    this.listings = this.listingsService.getListings();
+    this.listingsService.getListings().subscribe((data) => {
+      this.listings = data;
+    });
   }
 
 }

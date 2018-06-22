@@ -1,16 +1,18 @@
 import { Injectable } from '@angular/core';
-import { Listings } from '../models/listings';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { IListing } from '../interfaces/listing';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ListingsService {
 
-  private listings = Listings;
+  private url = 'assets/data/listings.json';
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
-  getListings() {
-    return this.listings;
+  getListings(): Observable<IListing[]> {
+    return this.http.get<IListing[]>(this.url);
   }
 }
