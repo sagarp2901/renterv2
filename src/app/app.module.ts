@@ -24,7 +24,7 @@ const appRoutes: Routes = [
   { path: 'signup', component: SignupComponent },
   { path: 'home', component: HomeComponent },
   { path: 'listings', component: ListingsComponent },
-  { path: '', redirectTo: 'listings', pathMatch: 'full' }
+  { path: '', redirectTo: 'signup', pathMatch: 'full' }
 ];
 
 @NgModule({
@@ -43,7 +43,8 @@ const appRoutes: Routes = [
     BrowserModule,
     RouterModule.forRoot(appRoutes, { enableTracing: false }),
     NgbModule.forRoot(),
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [ListingsService],
   bootstrap: [AppComponent]

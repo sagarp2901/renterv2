@@ -9,13 +9,18 @@ import { IListing } from '../../interfaces/listing';
 })
 export class ListingsComponent implements OnInit {
   public listings: IListing[];
+  public errorMsg;
 
   constructor(private listingsService: ListingsService) { }
 
   ngOnInit() {
-    this.listingsService.getListings().subscribe((data) => {
-      this.listings = data;
-    });
+    this.listingsService.getListings().subscribe(
+      (data) => {
+        this.listings = data;
+      },
+      (error) => {
+        this.errorMsg = error;
+      });
   }
 
 }
