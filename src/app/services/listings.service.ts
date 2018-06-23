@@ -2,8 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { IListing } from '../interfaces/listing';
-/* import { catchError } from 'rxjs/operators';
-import 'rxjs/add/observable/throw'; */
 
 @Injectable({
   providedIn: 'root'

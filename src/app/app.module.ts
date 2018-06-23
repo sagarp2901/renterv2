@@ -13,8 +13,6 @@ import { HomeComponent } from './components/home/home.component';
 import { ListingsComponent } from './components/listings/listings.component';
 import { ListingComponent } from './components/listing/listing.component';
 
-// Services
-import { ListingsService } from './services/listings.service';
 import { ImageCarouselComponent } from './components/image-carousel/image-carousel.component';
 import { NavComponent } from './components/nav/nav.component';
 
@@ -46,7 +44,7 @@ const appRoutes: Routes = [
     HttpClientModule,
     FormsModule
   ],
-  providers: [ListingsService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
