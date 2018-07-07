@@ -22,7 +22,7 @@ const appRoutes: Routes = [
   { path: 'signup', component: SignupComponent },
   { path: 'home', component: HomeComponent },
   { path: 'listings', component: ListingsComponent },
-  { path: '', redirectTo: 'signup', pathMatch: 'full' }
+  { path: '', redirectTo: 'listings', pathMatch: 'full' }
 ];
 
 @NgModule({
