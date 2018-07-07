@@ -1,4 +1,4 @@
-<div class="listing-container card">
+<mat-card class="listing-container">
   <div class="img-container">
     <!-- <img class="img-fluid" src="{{listing.image}}" alt="house" /> -->
     <!-- TODO: Images need to be passed as input to carousel -->
@@ -16,8 +16,8 @@
     <div class="price-1">${{listing.price}}</div>
     <p class="details-1 detail-para">{{listing.description}}</p>
     <div class="btn-container">
-      <button type="button" class="primary-btn">BOOK VIEWING</button>
-      <button type="button" class="primary-btn">GET QUOTE</button>
+      <button type="button" class="primary-btn" mat-raised-button>VISIT US</button>
+      <button type="button" class="primary-btn" mat-raised-button>APPLY NOW</button>
     </div>
   </div>
-</div>
+</mat-card>

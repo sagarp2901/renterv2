@@ -16,6 +16,11 @@ import { ListingComponent } from './components/listing/listing.component';
 import { ImageCarouselComponent } from './components/image-carousel/image-carousel.component';
 import { NavComponent } from './components/nav/nav.component';
 
+// Angular Material
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// Material Components
+import { MatButtonModule, MatCardModule, MatDialogModule } from '@angular/material';
+
 const appRoutes: Routes = [
   { path: 'landing', component: LandingComponent },
   { path: 'login', component: LoginComponent },
@@ -42,7 +47,12 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes, { enableTracing: false }),
     NgbModule.forRoot(),
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    // Angular Material
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatCardModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
