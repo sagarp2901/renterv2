@@ -20,6 +20,7 @@ import { NavComponent } from './components/nav/nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // Material Components
 import { MatButtonModule, MatCardModule, MatDialogModule } from '@angular/material';
+import { SchedulerComponent } from './components/scheduler/scheduler.component';
 
 const appRoutes: Routes = [
   { path: 'landing', component: LandingComponent },
@@ -40,7 +41,8 @@ const appRoutes: Routes = [
     ListingsComponent,
     ListingComponent,
     ImageCarouselComponent,
-    NavComponent
+    NavComponent,
+    SchedulerComponent
   ],
   imports: [
     BrowserModule,
@@ -54,6 +56,7 @@ const appRoutes: Routes = [
     MatCardModule,
     MatDialogModule
   ],
+  entryComponents: [SchedulerComponent]
   providers: [],
   bootstrap: [AppComponent]
 })

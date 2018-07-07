@@ -16,8 +16,8 @@
     <div class="price-1">${{listing.price}}</div>
     <p class="details-1 detail-para">{{listing.description}}</p>
     <div class="btn-container">
-      <button type="button" class="primary-btn" mat-raised-button>VISIT US</button>
-      <button type="button" class="primary-btn" mat-raised-button>APPLY NOW</button>
+      <button (click)="openSchedulerDialog()" class="primary-btn" mat-raised-button>VISIT US</button>
+      <button class="primary-btn" mat-raised-button>APPLY NOW</button>
     </div>
   </div>
 </mat-card>
