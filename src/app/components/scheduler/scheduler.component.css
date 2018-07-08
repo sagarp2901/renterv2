@@ -1,0 +1,28 @@
+.schedule-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+h4 {
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+.close-btn {
+    float: right;
+    margin-bottom: 10px;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media screen and (min-width: 700px){
+    .schedule-container {
+        width: 500px;
+    }
+}

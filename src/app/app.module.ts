@@ -15,12 +15,21 @@ import { ListingComponent } from './components/listing/listing.component';
 
 import { ImageCarouselComponent } from './components/image-carousel/image-carousel.component';
 import { NavComponent } from './components/nav/nav.component';
+import { SchedulerComponent } from './components/scheduler/scheduler.component';
 
 // Angular Material
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 // Material Components
-import { MatButtonModule, MatCardModule, MatDialogModule } from '@angular/material';
-import { SchedulerComponent } from './components/scheduler/scheduler.component';
+import {
+  MatIconModule,
+  MatButtonModule,
+  MatCardModule,
+  MatDialogModule,
+  MatSelectModule,
+  MatFormFieldModule,
+  MatInputModule
+} from '@angular/material';
 
 const appRoutes: Routes = [
   { path: 'landing', component: LandingComponent },
@@ -50,13 +59,18 @@ const appRoutes: Routes = [
     NgbModule.forRoot(),
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
     // Angular Material
     BrowserAnimationsModule,
+    MatIconModule,
     MatButtonModule,
     MatCardModule,
-    MatDialogModule
+    MatDialogModule,
+    MatSelectModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
-  entryComponents: [SchedulerComponent]
+  entryComponents: [SchedulerComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
